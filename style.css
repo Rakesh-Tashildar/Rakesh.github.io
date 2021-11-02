@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+*{
+    box-sizing:border-box;
+}
+body{
+    background-color:#3B3a3b;
+    color:white;
+    display:flex;
+    font-family: 'Muli', sans-serif;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:15px;
+    min-height:100vh;
+
+}
+p{
+    margin: 10px 0;
+}
+h2{
+    margin:5px 0 15px;
+    text-align:center;
+
+}
+input[type=checkbox]{
+    margin-right:0;
+}
+.container{
+    background-color:#f5aac4;
+    box-shadow:0px 5px 10px rgba(248, 168, 168, 0.2);
+    padding: 20px;
+    width: 400px;
+    max-width:100%;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    
+}
+.result-container{
+    background-color:#3B3a3b;
+    display:felx;
+    justify-content:flex-startl;
+    align-items: center;
+    position:relative;
+    font-size:18px;
+    letter-spacing:1px;
+    padding:30px 10px;
+    height: 20px;
+    width:100%;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    
+}
+.result-container #result{
+    word-wrap:break-word;
+    max-width:calc(100%-40px);
+}
+.result-container .btn{
+    font-size:20px;
+    position:absolute;
+    top: 5px;
+    right: 5px;
+	height: 40px;
+	width: 40px;
+}
+
+.btn {
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 8px 12px;
+	background-color: #3B3B98;
+    transition: 1s;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+
+}
+#clipboard:hover{
+    background-color: #f5aac4;
+}
+
+.btn-large {
+	display: block;
+	width: 200px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    transition: 1s;
+}
+.btn-large:hover{
+    background-color:#000;
+   
+}
+
+.Setting {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px 0;
+}
+
+@media screen and (max-width: 400px) {
+	.result-container {
+		font-size: 14px;
+	}
+}
