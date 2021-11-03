@@ -16,11 +16,18 @@ const randomFunc={
     number:getRandomNumber,
     symbol:getRandomSymbol
 }
-/*//copy clisboard*/
 
-clipboardEl.onclick=function(){
-    resultEl.select;
-    navigator.clipboard.writeText(resultEl.value);
+/*//copy clisboard*/
+function myFunction() {
+  /*Get the text field */
+  let resultEl1 = document.getElementById("result");
+  /* Select the text field */
+  let newpassword =resultEl.innerText;
+  //resultEl1.setSelectionRange(0, 99999); /* For mobile devices */
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(newpassword);
+  /* Alert the copied text */
+  alert("Copied the text: " + resultEl.innerText);
 }
 
 
